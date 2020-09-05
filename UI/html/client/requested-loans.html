@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <title>Tin dụng sinh viên | Các khoản vay được yêu cầu</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="logo with-bars">
+                <h2><a href="login.html">Tín dụng sinh viên</a></h2>
+                <div class="tree-bars" onclick="toggleLeftMenu()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="account-link" onclick="toggleRightMenu()">
+                        <img class="circle profile-pic" src="../../images/default-avatar.png" alt="user">
+                        <span class="username"><span class="usernm">Thu</span> <i class="caret">&#9660;</i></span> 
+                        </a>
+                        <ul class="drop-content" id="right-menu">
+                            <li><a href="profile.html">Trang cá nhân</a></li>
+                            <hr>
+                            <li><a href="../login.html">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="aside" id="aside">
+            <ul onclick="myFunction(event)">
+                <li><a href="account.html">Trang cá nhân</a></li>
+                <li><a href="request-a-loan.html">
+                    Yêu cầu một khoản vay</a></li>
+                <li><a href="requested-loans.html" class="active">
+                    Tất cả các khoản vay được yêu cầu</a></li>
+                <li><a href="repayment-history.html">Lịch sử trả nợ</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div id="client">
+                <div id="current-pages">
+                    <ul class="current-page">
+                      <li class="active"> <b>Các khoản vay được yêu cầu
+                      </li>
+                    </ul>
+                </div>
+                <div class="back-card">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="">Mã </th>
+                                <th>Số tiền vay</th>
+                                <th> Ngày vay</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#12345676</td>
+                                <td>12000000</td>
+                                <td>23-01-2019</td>
+                                <td>
+                                    <label class="label yellow-label">Đang chờ xử lý</label>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td>#12345675</td>
+                                <td>6600000</td>
+                                <td>23-03-2018</td>
+                                <td>
+                                    <label class="label blue-label">
+                                        Hiện hành</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#12345674</td>
+                                <td>4830000</td>
+                                <td>23-01-2017</td>
+                                <td>
+                                    <label class="label red-label">
+                                        Từ chối</label>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td>#12345673</td>
+                                <td>2290000</td>
+                                <td>23-02-2016</td>
+                                <td>
+                                    <label class="label green-label">
+                                        Hoàn trả</label>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td>#12345672</td>
+                                <td>1200000</td>
+                                <td>23-02-2015</td>
+                                <td>
+                                    <label class="label red-label">Từ chối</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#12345671</td>
+                                <td>1000000</td>
+                                <td>23-01-2014</td>
+                                <td>
+                                    <label class="label green-label">Hoàn trả</label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+             <p>&copy; <script>document.write(new Date().getFullYear());</script> <a href="#">Tín dụng sinh viên</a> Đã đăng kí bản quyền</p>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

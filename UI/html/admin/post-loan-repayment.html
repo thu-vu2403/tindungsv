@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <title>tín dụng sinh viên | Đăng trả khoản vay</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="logo with-bars">
+                <h2><a href="login.html">Tín dụng sinh viên</a></h2>
+                <div class="tree-bars" onclick="toggleLeftMenu()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="account-link" onclick="toggleRightMenu()">
+                        <img class="circle profile-pic" src="../../images/default-avatar.png" alt="user">
+                        <span class="username"><span class="usernm">Quản trị viên</span> <i class="caret">&#9660;</i></span> 
+                        </a>
+                        <ul class="drop-content" id="right-menu">
+                            <li><a href="profile.html">Trang cá nhân</a></li>
+                            <hr>
+                            <li><a href="../login.html">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="aside" id="aside">
+            <ul onclick="myFunction(event)">
+                <li><a href="dashboard.html">Bảng</a></li>
+                <li><a href="all-clients.html">Tất cả sinh viên</a></li>
+                <li><a href="all-loans.html" class="active">Tất cả các khoản cho vay</a></li>
+                <li><a href="pending-loans.html">Các khoản vay đang chờ xử lý</a></li>
+                <li><a href="rejected-loans.html">Các khoản cho vay bị từ chối</a></li>
+                <li><a href="not-fully-repaid-loans.html">Các khoản cho vay hiện tại</a></li>
+                <li><a href="repaid-loans.html">Khoản vay đã trả</a></li>
+                <li><a href="post-loan-repayment.html">Thanh toán</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div id="current-pages">
+                <ul class="current-page">
+                  <li class="active"> <b>
+                    Giao dịch thành công </b></li>
+                </ul>
+            </div>
+            <div class="back-card">
+                <form method="POST">
+                    <div class="each-input">
+                        <label>mã ID</label>
+                        <input type="text" name="name" class="input-form">
+                    </div>
+                    <div class="each-input">
+                        <label>Họ và tên </label>
+                        <input type="text" name="name" class="input-form">
+                    </div>
+                    <div class="each-input">
+                        <label>Số tiền để thanh toán</label>
+                        <input type="number" name="amount" class="input-form">
+                    </div>
+                    <div class="each-input">
+                        <label>Kì hạn</label>
+                        <input type="text" name="tenor" class="input-form">
+                    </div>
+                    <div class="each-input">
+                        <label>  Trả góp</label>
+                        <input type="text" name="amount" class="input-form">
+                    </div>
+                     <div class="each-input">
+                        <label>Lãi suất</label>
+                        <input type="text" name="interest" class="input-form">
+                    </div>
+                    <div class="each-input">
+                        <label>Số tiền còn lại</label>
+                        <input type="number" name="balance" class="input-form">
+                    </div>
+                   
+                    <button class="btn blue-btn" type="submit">Trả lại</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+             <p>&copy; <script>document.write(new Date().getFullYear());</script> <a href="#">Tín dụng sinh viên</a> Đã đăng kí bản quyền</p>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

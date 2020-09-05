@@ -1,0 +1,8 @@
+node_modules
+coverage
+.eslintrc.json
+.nyc_output
+.env
+.vscode/
+.DS_Store
+UI/.DS_Store

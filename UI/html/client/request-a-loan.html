@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <title>Tín dụng sinh viên | Yêu cầu một khoản vay</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="logo with-bars">
+                <h2><a href="login.html">tín dụng sinh viên</a></h2>
+                <div class="tree-bars" onclick="toggleLeftMenu()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="account-link" onclick="toggleRightMenu()">
+                        <img class="circle profile-pic" src="../../images/default-avatar.png" alt="user">
+                        <span class="username"><span class="usernm">Thu</span> <i class="caret">&#9660;</i></span> 
+                        </a>
+                        <ul class="drop-content" id="right-menu">
+                            <li><a href="profile.html">Trang cá nhân</a></li>
+                            <hr>
+                            <li><a href="../login.html">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="aside" id="aside">
+            <ul onclick="myFunction(event)">
+                <li><a href="account.html">Trang cá nhân </a></li>
+                <li><a href="request-a-loan.html" class="active">Yêu cầu một khoản vay</a></li>
+                <li><a href="requested-loans.html">
+                    Tất cả các khoản vay được yêu cầu</a></li>
+                <li><a href="repayment-history.html">
+                    Lịch sử trả nợ</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div id="client">
+                <div id="current-pages">
+                    <ul class="current-page">
+                      <li class="active"> <b>
+                        Yêu cầu một khoản vay
+                      </li>
+                    </ul>
+                </div>
+                <div class="back-card">
+                    <form method="POST">
+                        <div class="each-input">
+                            <label>Tên</label>
+                            <input type="text" name="name" class="input-form readonly" value="" readonly="true">
+                        </div>
+                        <div class="each-input">
+                            <label>Số tiền bằng (đồng) cho một khoản vay</label>
+                            <input type="number" name="number" class="input-form">
+                        </div>
+                        <div class="each-input">
+                            <label>Kỳ hạn</label>
+                            <select name="tenor" class="input-form">
+                                <option value="1" selected="true">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="each-input">
+                            <label>
+                                Trả góp</label>
+                            <input type="number" name="paymentInstallment" placeholder="" readonly="true"
+                                class="input-form">
+                        </div>
+                        <div class="each-input">
+                            <label>
+                                Lãi suất (5% số tiền)</label>
+                            <input type="number" name="interest" placeholder="" readonly="true" class="input-form">
+                        </div>
+                        <button class="btn blue-btn" type="submit">
+                            Yêu cầu một khoản vay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+             <p>&copy; <script>document.write(new Date().getFullYear());</script> <a href="#">Tín dụng sinh viên</a> Đã đăng kí bản quyền</p>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

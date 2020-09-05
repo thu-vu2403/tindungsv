@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <title>Tín dụng sinh viên | Tài khoản Sinh viên </title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="logo with-bars">
+                <h2><a href="login.html">Tín dụng sinh viên</a></h2>
+                <div class="tree-bars" onclick="toggleLeftMenu()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="account-link" onclick="toggleRightMenu()">
+                        <img class="circle profile-pic" src="../../images/default-avatar.png" alt="user">
+                        <span class="username"><span class="usernm">Thu</span> <i class="caret">&#9660;</i></span> 
+                        </a>
+                        <ul class="drop-content" id="right-menu">
+                            <li><a href="profile.html">Trang cá nhân</a></li>
+                            <hr>
+                            <li><a href="../login.html">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="aside" id="aside">
+            <ul onclick="myFunction(event)">
+                <li><a href="account.html" class="active">Trang cá nhân</a></li>
+                <li><a href="request-a-loan.html">Yêu cầu một khoản vay</a></li>
+                <li><a href="requested-loans.html">
+                    Tất cả các khoản vay được yêu cầu</a></li>
+                <li><a href="repayment-history.html">
+                    Lịch sử trả nợ</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div id="client">
+                <div id="current-pages">
+                    <ul class="current-page">
+                      <li class="active"> <b>Trang cá nhân | Mã: #45645678</b>
+                        <label class="label green-label">Xác định</label>
+                      </li>
+                    </ul>
+                </div>
+                <div class="back-card">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><b>Tên</b></td>
+                                <td> <span>Thu</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td><span>Vuthikimthu@gmail.com</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Địa chỉ</b></td>
+                                <td>Ninh Bình</td>
+                            </tr>
+                            <tr>
+                                <td><b>
+                                    Khoản vay hiện tại</b></td>
+                                <td>3.450.000</td>
+                            </tr>
+                            <tr>
+                                <td><b>
+                                    Khoản vay phải trả</b></td>
+                                <td>3.000.000</td>
+                            </tr>
+                            <tr>
+                                <td><b>
+                                    Còn lại</b></td>
+                                <td>450.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+             <p>&copy; <script>document.write(new Date().getFullYear());</script> <a href="#">Tín dụng sinh viên</a> Đã đăng kí bản quyền</p>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

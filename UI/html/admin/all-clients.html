@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <title>Tín dụng sinh viên | Tất cả sinh viên</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="logo with-bars">
+                <h2><a href="login.html">Tín dụng sinh viên </a></h2>
+                <div class="tree-bars" onclick="toggleLeftMenu()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="account-link" onclick="toggleRightMenu()">
+                        <img class="circle profile-pic" src="../../images/default-avatar.png" alt="user">
+                        <span class="username"><span class="usernm">Quản trị viên </span> <i class="caret">&#9660;</i></span> 
+                        </a>
+                        <ul class="drop-content" id="right-menu">
+                            <li><a href="profile.html">Thông tin cá nhân</a></li>
+                            <hr>
+                            <li><a href="../login.html">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="aside" id="aside">
+            <ul onclick="myFunction(event)">
+                <li><a href="dashboard.html">Bảng</a></li>
+                <li><a href="all-clients.html" class="active">Tất cả sinh viên</a></li>
+                <li><a href="all-loans.html">Tất cả các khoản cho vay</a></li>
+                <li><a href="pending-loans.html">  Các khoản vay đang chờ xử lý</a></li>
+                <li><a href="rejected-loans.html">Các khoản cho vay bị từ chối</a></li>
+                <li><a href="not-fully-repaid-loans.html">
+                    Các khoản cho vay hiện tại</a></li>
+                <li><a href="repaid-loans.html">Khoản vay đã trả</a></li>
+                <li><a href="post-loan-repayment.html">Thanh toán</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div class="admin">
+                <div id="current-pages">
+                    <ul class="current-page">
+                      <li class="active"> <b>Tất cả sinh viên</b>
+                      </li>
+                    </ul>
+                </div>
+
+                <div class="back-card">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th class="">Tên</th>
+                            <th>Email</th>
+                            <th>Địa chỉ</th>
+                            <th>Ngày vay</th>
+                            <th>Trạng thái</th>
+                            <th>Hoạt động</th>
+                          </tr>
+                        </thead>
+                  
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>thu</td>
+                            <td>vuthu@gmail.com</td>
+                            <td>Ha Noi</td>
+                            <td>07-03-2019</td>
+                            <td><button class="btn yellow-btn click-btn">Chưa xác minh</button></td>
+                            <td>
+                                <button class="btn p-blue-btn sm-btn">
+                                    <a href="specific-client.html">Xem</a>
+                                </button>
+                                <button class="btn blue-btn sm-btn">
+                                    <a href="edit-client.html">Chỉnh sửa</a>
+                                </button>
+                                <button class="btn red-btn sm-btn">Xóa</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Dieu</td>
+                            <td>Leo@gmail.com</td>
+                            <td>Nam Dinh</td>
+                            <td>05-03-2019</td>
+                            <td><button class="btn yellow-btn click-btn">Chưa xác minh</button></td>
+                            <td>
+                                <button class="btn p-blue-btn sm-btn">
+                                    <a href="specific-client.html">Xem</a>
+                                </button>
+                                <button class="btn blue-btn sm-btn">
+                                    <a href="edit-client.html">Chỉnh sửa</a>
+                                </button>
+                                <button class="btn red-btn sm-btn">Xóa</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Nam</td>
+                            <td>rugoga@gmail.com</td>
+                            <td>Quang Ninh</td>
+                            <td>04-03-2019</td>
+                            <td><button class="btn green-btn click-btn">Xác minh</button></td>
+                            <td>
+                                <button class="btn p-blue-btn sm-btn">
+                                    <a href="specific-client.html">Xem</a>
+                                </button>
+                                <button class="btn blue-btn sm-btn">
+                                    <a href="edit-client.html">Chỉnh sửa</a>
+                                </button>
+                                <button class="btn red-btn sm-btn">Xóa</button>
+                            </td>
+                          </tr>
+                  
+                          <tr>
+                            <td>4</td>
+                            <td>Dong Anh</td>
+                            <td>john@gmail.com</td>
+                            <td>Ninh Binh</td>
+                            <td>01-03-2019</td>
+                            <td><button class="btn green-btn click-btn">Xác minh</button></td>
+                            <td>
+                                <button class="btn p-blue-btn sm-btn">
+                                    <a href="specific-client.html">Xem</a>
+                                </button>
+                                <button class="btn blue-btn sm-btn">
+                                    <a href="edit-client.html">Chỉnh sửa</a>
+                                </button>
+                                <button class="btn red-btn sm-btn">Xóa</button>
+                            </td>
+                          </tr>
+                  
+                          <tr>
+                            <td>5</td>
+                            <td>Huyen</td>
+                            <td>Huyen123@gmail.com</td>
+                            <td>Ha Noi</td>
+                            <td>01-03-2019</td>
+                            <td><button class="btn green-btn click-btn">Xác minh</button></td>
+                            <td>
+                                <button class="btn p-blue-btn sm-btn">
+                                    <a href="specific-client.html">Xem</a>
+                                </button>
+                                <button class="btn blue-btn sm-btn">
+                                    <a href="edit-client.html">Chỉnh sửa</a>
+                                </button>
+                                <button class="btn red-btn sm-btn">Xóa</button>
+                            </td>
+                          </tr>
+                  
+                          <tr>
+                            <td>6</td>
+                            <td>Huong</td>
+                            <td>huongnguyen@gmail.com</td>
+                            <td>Thanh Hoa</td>
+                            <td>01-03-2019</td>
+                            <td><button class="btn green-btn click-btn">Xác minh</button></td>
+                            <td>
+                                <button class="btn p-blue-btn sm-btn">
+                                    <a href="specific-client.html">Xem</a>
+                                </button>
+                                <button class="btn blue-btn sm-btn">
+                                    <a href="edit-client.html">Chỉnh sửa</a>
+                                </button>
+                                <button class="btn red-btn sm-btn">Xóa</button>
+                            </td>
+                          </tr>
+                           <tr>
+                              <td>7</td>
+                              <td>Thong</td>
+                              <td>thongnt@gmail.com</td>
+                              <td>Ha Noi</td>
+                              <td>01-03-2019</td>
+                              <td><button class="btn green-btn click-btn">Xác minh</button></td>
+                              <td>
+                                <button class="btn p-blue-btn sm-btn">
+                                    <a href="specific-client.html">Xem</a>
+                                </button>
+                                <button class="btn blue-btn sm-btn">
+                                    <a href="edit-client.html">Chỉnh sửa</a>
+                                </button>
+                                <button class="btn red-btn sm-btn">Xóa</button>
+                            </td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>Nguyen</td>
+                              <td>Nguyenvu@gmail.com</td>
+                              <td>Lam dong</td>
+                              <td>01-03-2019</td>
+                              <td><button class="btn green-btn click-btn">Xác minh</button></td>
+                              <td>
+                                <button class="btn p-blue-btn sm-btn">
+                                    <a href="specific-client.html">Xem</a>
+                                </button>
+                                <button class="btn blue-btn sm-btn">
+                                    <a href="edit-client.html">Chỉnh sửa</a>
+                                </button>
+                                <button class="btn red-btn sm-btn">Xóa</button>
+                            </td>
+                            </tr>
+                        </tbody>
+                  </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+             <p>&copy; <script>document.write(new Date().getFullYear());</script> <a href="#">Tín dụng sinh viên</a> 
+                Đã đăng ký Bản quyền </p>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>

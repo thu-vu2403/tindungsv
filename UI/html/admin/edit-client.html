@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <title>Tín dụng sinh viên | Chỉnh sửa</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="logo with-bars">
+                <h2><a href="login.html">Tín dụng sinh viên</a></h2>
+                <div class="tree-bars" onclick="toggleLeftMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="account-link" onclick="toggleRightMenu()">
+                            <img class="circle profile-pic" src="../../images/default-avatar.png" alt="user">
+                            <span class="username"><span class="usernm">trang chủ</span> <i class="caret">&#9660;</i></span>
+                        </a>
+                        <ul class="drop-content" id="right-menu">
+                            <li><a href="profile.html">Trang cá nhân</a></li>
+                            <hr>
+                            <li><a href="../login.html">Đăng nhập</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="aside" id="aside">
+            <ul onclick="myFunction(event)">
+                <li><a href="dashboard.html" class="active">Bảng</a></li>
+                <li><a href="all-clients.html">Tất cả sinh viên</a></li>
+                <li><a href="all-loans.html">Tất cả các khoản cho vay</a></li>
+                <li><a href="pending-loans.html">Các khoản vay đang chờ xử lý</a></li>
+                <li><a href="rejected-loans.html">Các khoản cho vay bị từ chối</a></li>
+                <li><a href="not-fully-repaid-loans.html">Các khoản cho vay hiện tại</a></li>
+                <li><a href="repaid-loans.html">Khoản vay đã trả</a></li>
+                <li><a href="post-loan-repayment.html">Thanh toán</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div class="admin">
+                <div id="current-pages">
+                    <ul class="current-page">
+                        <li class="active"> <b>Sửa  | Mã sinh viên : #45645678</b>
+                            <label class="label green-label">Xác minh</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="back-card">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><b>Tên</b></td>
+                                <td><span><input value="Herve Nkurikiyimfura" class="input-sm-form"></span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Email</b></td>
+                                <td><span><input value="herveralive@gmail.com" class="input-sm-form"></span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Địa chỉ</b></td>
+                                <td><input value="KN Nyamirambo ST 400" class="input-sm-form"></td>
+                            </tr>
+                            <tr>
+                                <td><b>KHoản vay hiện tại</b></td>
+                                <td><input value="3.450.000" class="input-sm-form"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Khoản vay phải trả</b></td>
+                                <td><input value="3.000.000" class="input-sm-form"></td>
+                            </tr>
+                            <tr>
+                                <td><b>Còn lại</b></td>
+                                <td><input value="$45.00" class="input-sm-form"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="admin-decision">
+                        <div class="float-right">
+                            <button class="btn blue-btn click-btn">
+                                Đã xác minh</button>
+                            <button class="btn red-btn click-btn">Chưa xác minh</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>&copy;
+                <script>document.write(new Date().getFullYear());</script> <a href="#">Tín dụng sinh viên</a> Đã đăng kí bản quyền</p>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

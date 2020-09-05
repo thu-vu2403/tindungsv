@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <title>Tín dụng sinh viên | Bảng của quản trị viên </title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="logo with-bars">
+                <h2><a href="login.html">Tín dụng sinh viên</a></h2>
+                <div class="tree-bars" onclick="toggleLeftMenu()">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a class="account-link" onclick="toggleRightMenu()">
+                        <img class="circle profile-pic" src="../../images/default-avatar.png" alt="user">
+                        <span class="username"><span class="usernm">Quản trị viên</span> <i class="caret">&#9660;</i></span> 
+                        </a>
+                        <ul class="drop-content" id="right-menu">
+                            <li><a href="profile.html">Thông tin cá nhân</a></li>
+                            <hr>
+                            <li><a href="../login.html">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="aside" id="aside">
+            <ul onclick="myFunction(event)">
+                <li><a href="dashboard.html" class="active">Bảng</a></li>
+                <li><a href="all-clients.html">Tất cả sinh viên</a></li>
+                <li><a href="all-loans.html">Tất cả các khoản cho vay</a></li>
+                <li><a href="pending-loans.html">Các khoản vay đang chờ xử lý</a></li>
+                <li><a href="rejected-loans.html">Các khoản cho vay bị từ chối</a></li>
+                <li><a href="not-fully-repaid-loans.html">Các khoản cho vay hiện tại</a></li>
+                <li><a href="repaid-loans.html">Khoản vay đã trả</a></li>
+                <li><a href="post-loan-repayment.html">Thanh toán</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div id="current-pages">
+                <ul class="current-page">
+                  <li class="active"> <b>Tổng quan</b></li>
+                </ul>
+            </div>
+            <div class="back-card">
+                <div class="total-cards">
+                    <div class="total-card">
+                        <h4 class="padding-1">Tổng số sinh viên </h4>
+                        <h1 class="total-txt">120</h1>
+                    </div>
+                    <div class="total-card">
+                        <h4 class="padding-1">
+                            Các khoản vay hiện tại</h4>
+                        <h1 class="total-txt">300</h1>
+                    </div>
+                    <div class="total-card">
+                        <h4 class="padding-1"> Các khoản vay chờ xử lý</h4>
+                        <h1 class="total-txt">400</h1>
+                    </div>
+                    <div class="total-card">
+                        <h4 class="padding-1"> Các khoản vay bị từ chối</h4>
+                        <h1 class="total-txt">100</h1>
+                    </div>
+                    <div class="total-card">
+                        <h4 class="padding-1">
+                            Khoản vay đã trả</h4>
+                        <h1 class="total-txt">200</h1>
+                    </div>
+                </div>
+                <div class="view-tables">
+                    <div class="dash-table">
+                        <h4>Sinh viên đã đăng ký mới</h4>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th>STT</th>
+                                <th>Tên </th>
+                                <th>Dịa chỉ</th>
+                                 <th>Ngày vay</th>
+                                <th>Trạng thái</th>
+                              </tr>
+                            </thead>
+                      
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Mai</td>
+                                <td>Hai Phong</td>
+                                <td>07-03-2019</td>
+                                <td><button class="btn yellow-btn click-btn">Chưa xác nhận</button></td>
+                              </tr>
+
+                              <tr>
+                                <td>2</td>
+                                <td>Hai</td>
+                                <td>Hung Yen</td>
+                                <td>05-03-2019</td>
+                                <td><button class="btn yellow-btn click-btn">Chưa xác nhận</button></td>
+                              </tr>
+
+                              <tr>
+                                <td>3</td>
+                                <td>Tuan</td>
+                                <td>Da Nang</td>
+                                <td>04-03-2019</td>
+                                <td><button class="btn green-btn click-btn">Xác nhận</button></td>
+                              </tr>
+                      
+                              <tr>
+                                <td>4</td>
+                                <td>Hao</td>
+                                <td>Binh Dinh</td>
+                                <td>01-03-2019</td>
+                                <td><button class="btn green-btn click-btn">Xác nhận</button></td>
+                              </tr>
+                      
+                              <tr>
+                                <td>5</td>
+                                <td>Thuy</td>
+                                <td>Ha Noi</td>
+                                <td>01-03-2019</td>
+                                <td><button class="btn green-btn click-btn">Xác nhận</button></td>
+                              </tr>
+
+                              <tr>
+                                <td>6</td>
+                                <td>Thanh</td>
+                                <td>Ninh Binh</td>
+                                <td>01-03-2019</td>
+                                <td><button class="btn green-btn click-btn">Xác nhận</button></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="dash-table">
+                        <h3>
+                            Các khoản vay được yêu cầu mới</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên</th>
+                                    <th>Số tiền vay</th>
+                                    <th>Ngày vay</th>
+                                    <th>Trạng thái<img src="" alt="" sizes="" srcset=""></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Chi</td>
+                                    <td>1200000</td>
+                                    <td>23-01-2019</td>
+                                    <td>
+                                        <button class="btn yellow-btn click-btn">Đang chờ xử lý</button>
+                                    </td>
+                                </tr>
+                
+                                <tr>
+                                    <td>2</td>
+                                    <td>Thao</td>
+                                    <td>6600000</td>
+                                    <td>23-03-2018</td>
+                                    <td>
+                                        <button class="btn green-btn click-btn">Hoàn trả</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Mai</td>
+                                    <td>4830000</td>
+                                    <td>23-01-2017</td>
+                                    <td>
+                                        <button class="btn p-blue-btn click-btn">Hiện hành</button>
+                                    </td>
+                                </tr>
+                
+                                <tr>
+                                    <td>4</td>
+                                    <td>Huong</td>
+                                    <td>2290000</td>
+                                    <td>23-02-2016</td>
+                                    <td>
+                                        <button class="btn yellow-btn click-btn">Đang chờ xử lý</button>
+                                    </td>
+                                </tr>
+                
+                                <tr>
+                                    <td>5</td>
+                                    <td>Hung</td>
+                                    <td>1200000</td>
+                                    <td>23-02-2015</td>
+                                    <td>
+                                        <button class="btn red-btn click-btn">Từ chối</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Tuan</td>
+                                    <td>1000000</td>
+                                    <td>23-01-2014</td>
+                                    <td>
+                                        <button class="btn green-btn click-btn">Từ chối</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+             <p>&copy; <script>document.write(new Date().getFullYear());</script> <a href="#">Tín dụng sinh viên</a> Đã đăng kí bản quyền</p>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
+</html>
