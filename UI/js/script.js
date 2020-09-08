@@ -20,7 +20,7 @@ loginForm.addEventListener('submit', function(e) {
 	var admin = document.getElementById("email").value,
 	password = document.getElementById("password").value;
 
-	if(admin == "admin@quickcredit.com" && password == "secret"){
+	if(admin == "testtindungsv@gmail.com" && password == "test123"){
 		window.location.href = "admin/dashboard.html";
 	}
 	else{
